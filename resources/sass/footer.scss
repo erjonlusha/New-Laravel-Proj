@@ -1,0 +1,84 @@
+footer{background-color: $verde_acqua;
+    .container_footer{
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        .left_footer {
+            width: calc(50% - 100px);
+            div{
+                width: 75%;
+                margin: auto;
+                // h2{font-size: 3rem;}
+                p{font-size: 18px;}
+            }
+        }
+        .center_footer {                 
+            width: 200px;
+            height: 295px;
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 100%;
+                filter: drop-shadow(7px 10px 4px rgba(0, 0, 0, 0.25));
+            }
+            .iphone_top{
+                color: white;
+                position: absolute;
+                width: 86.6%;
+                top: 12%;
+                bottom: 0;
+                left: 0;
+                margin-left: 6.6%;
+                background-color: $blu_viola;
+                @include bgGradient62($blu_viola_chiaro, $blu_viola, $viola);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 15px 10px 0 9px;
+                text-align: center;
+            }
+            .socials {
+                width: 100%;
+                div{
+                    padding: 5px 10px;
+                    background: $blu_viola_chiaro;
+                    border-radius: 82%;
+                    &:hover{transform: scale(1.1);}
+                }
+            }
+            .form-group{
+                width: 100%;
+                text-align: center;
+                label{
+                    font-size: small;
+                    margin: 0;
+                }
+                .btn_news {
+                    @include hovShadow($white, $blu_viola_chiaro);
+                    color: $verde_acqua_scuro;
+                    // background-color: $viola;
+                    width: 100%;
+                    border-radius: 5px;
+                    margin: 0;
+                    padding: 5px;
+                    &:hover {text-decoration: none;}
+                }
+                .form-control {
+                    font-size: 0.5rem;
+                    background: $blu_viola_chiaro;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .right_footer{
+            height: 100%;
+            width: calc(50% - 100px);
+            div {
+                width: 60%;
+                margin: auto;
+                p{font-size: 18px;}
+
+            }
+        }
+    }
+}
