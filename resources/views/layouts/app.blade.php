@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -88,18 +89,19 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
+        
             <!-- Page Content -->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
                             {{-- <a href="#menu-toggle" class="btn btn-dark" id="menu-toggle">Chiudi Menu</a> --}}
-                            <a class="btn btn-dark" id="menu-toggle" href="#menu-toggle"
+                            <a class="btn btn-dark fas fa-arrow-alt-circle-left" id="menu-toggle" href="#menu-toggle" value="<"
                                        onclick="event.preventDefault();
-                                       console.log(event.preventDefault());
-                                       document.getElementById('wrapper').classList.toggle('toggled');">
-                                    </a>
+                                       document.getElementById('wrapper').classList.toggle('toggled');
+                                       document.getElementById('menu-toggle').classList.contains('btn-dark') ? this.classList.replace('btn-dark', 'btn-primary') : this.classList.replace('btn-primary','btn-dark')
+                                    document.getElementById('menu-toggle').classList.contains('fa-arrow-alt-circle-left') ? this.classList.replace('fa-arrow-alt-circle-left', 'fa-arrow-alt-circle-right') : this.classList.replace('fa-arrow-alt-circle-right','fa-arrow-alt-circle-left')
+                                       "></a>
                             @yield('content')
                                     
                         </div>
@@ -118,7 +120,5 @@
             $("#wrapper").toggleClass("toggled");
         });
     </script> --}}
-
-
 </body>
 </html>

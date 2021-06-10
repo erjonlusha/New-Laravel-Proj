@@ -1,8 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Benvenuto {{ Auth::user()->name }}</h1>
-<h2>Chi sono</h2><p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+    <div class="container">
+        <h1 class="txt_center">Benvenuto {{ Auth::user()->name }}</h1>
+        <h2>Chi sono</h2>
+        <p>Una biografia (dal greco bíos βίος "vita" e gráphein γράφειν, "scrivere") è un testo che contiene la ricostruzione complessiva della vita di una persona, scritto in forma narrativa o di saggio. Quando proviene dallo stesso soggetto, si ha una autobiografia.</p>
+        <p>
+            <small>«La storiografia, come ben insegna Benedetto Croce, non deve mai diventare un tribunale di fronte al quale processare gli uomini del passato per le loro azioni, onde condannarli o assolverli; i tribunali sia giuridici che morali, servono solo per gli uomini vivi, i morti, invece, hanno già sostenuto il giudizio dei tribunali del loro tempo e non possono essere assolti o condannati due volte»</small>
+            <small>(A.Ventura, Romolo Caggese tra storiografia e politica (1881-1891), Rassegna di Studi Dauni, Foggia, 1981)</small>
+        </p>
+        <p>La storiografia dell'esistenza di una persona è variata nel corso dei secoli in funzione non solo del contesto culturale e del modello letterario, ma anche della considerazione dell'individualità e dell'incidenza delle varie fasi della vita. Attualmente si sono diffuse biografie che, sfruttando gli studi psicoanalitici, dedicano ampio spazio all'infanzia del protagonista; altre culture e civiltà, invece, si limitano a narrare i comportamenti che hanno inciso oggettivamente sulla realtà e trattano l'infanzia solo come un periodo profetico sull'avvenire del soggetto.</p>
+        <small class="copyright">&copy;Wikipedia</small>
+    </div>
 @endsection
 
 

@@ -22,14 +22,15 @@ Route::get('/', 'PageController@index')->name('welcome');
 
 Auth::routes();
 
+Route::POST('messaggi', 'MessageController@store')->name('messaggi');
 
 Route::prefix('admin')
 ->namespace('Admin')
 ->middleware('auth')
 ->group(function () {
-    //   Route::get('/', 'HomeController@index')
     Route::get('/dashboard', 'HomeController@index')->name('dashboard');
     Route::get('myFavourites', 'HomeController@myFavourites')->name('myFavourites');
     Route::get('mySocial', 'HomeController@mySocial')->name('mySocial');
     Route::get('contactMe', 'HomeController@contactMe')->name('contactMe');
-     });
+});
+

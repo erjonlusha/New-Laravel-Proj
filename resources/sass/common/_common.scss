@@ -8,26 +8,58 @@
 body{
     max-width: 2140px;
     margin: auto;
-}
-.card {
-transition: transform 0.5s;
-transform-style: preserve-3d;
-cursor: pointer;
+    overflow-x: hidden;
 }
 
-.btn-grad {
-    @include baseButton($verde_acqua_scuro, $blu_viola_chiaro, $blu_viola, $white, right, right);
+.btn {
+    filter: drop-shadow(7px 4px 6px #00000050);
+    text-shadow: 0px 0px 10px #ffffffa8;
 }
 
-.btn-grad-secondary {
-    @include baseButton($blu_viola, $blu_viola_chiaro, $verde_acqua_scuro, $white, right, right);
+.txt_center{
+    text-align: center!important;
 }
 
-
-.btn-grad-dark {
-    @include baseButton($blu_viola_chiaro, $blu_viola, $viola, $white, right, right);
+h1, h2{
+    filter: drop-shadow(7px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
-.btn-grad-secondary-dark {
-    @include baseButton($blu_viola_chiaro, $blu_viola, $viola, $white, right, right);
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    color: gray;
+}
+
+.my_socials{
+    ul{
+        height: 475px;
+    }
+    ul>li{list-style: none;}
+    .desc {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-content: center;
+        align-items: baseline;
+
+        h5{
+            font-weight: 600;
+            filter: drop-shadow(7px 4px 6px #00000050);
+
+        }
+    }
+    
+    .qr_code{
+        margin-top: 30px;
+        img{
+            width: 160px;
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+
+    }
+    .social_logo{
+        font-size: 1.7em;
+    }
 }

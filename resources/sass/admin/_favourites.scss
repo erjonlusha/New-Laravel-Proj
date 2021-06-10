@@ -1,0 +1,22 @@
+.favourites{
+    h1{text-align: center;}
+    .fst_p{
+        padding: 20px;
+        #ytplayer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        .photo_container{
+            width: 100%;
+            #photo {
+                height: 300px!important;
+                max-width: 357px!important;
+                padding: 20px;
+                filter: drop-shadow(7px 10px 4px rgba(0, 0, 0, 0.25));
+            }
+        }
+    }
+
+}

@@ -1,0 +1,37 @@
+.riuscito{
+    height: fit-content;
+    width: 400px;
+    color: darkgreen;
+    margin: auto;
+    background: darkgreen;
+    align-items: center;
+    border-radius: 50px;
+    padding: 25px;
+    filter: drop-shadow(7px 4px 6px #093600af);
+    text-shadow: 0px 0px 10px #0222006e;
+
+    h1, .container{
+        background-color:white;
+        padding: 20px 20px;
+    }
+    h1{
+        text-align: center;
+        display: flex;
+        margin: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .container{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+        .btn{
+            width: 120px!important;
+            filter: drop-shadow(7px 4px 6px #0000006c);
+            text-shadow: 0px 0px 10px #ffffffa8;
+        }
+    }
+}
